@@ -1,3 +1,4 @@
+// a Array of cape verde island
 const capeVerdIsland = [
   "Santo Antão",
   "São Nicolau",
@@ -12,3 +13,10 @@ const capeVerdIsland = [
 ];
 
 console.log(capeVerdIsland);
+
+let names = ["Adilson", "Maria", "Carlos", "Pedro", "Luis"];
+function printNames(array) {
+  array.forEach((name) => console.log(name));
+}
+console.log("Q1 printNames");
+printNames(names);
