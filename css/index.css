@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(202, 239, 241);
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: rgb(32, 3, 73);
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: black;
+  text-decoration: underline;
+}
+section {
+  margin: 20px; /*space between sections*/
+  padding: 20px; /* padding around each section*/
+}
+
+#about {
+  text-align: center; /* make title centered */
+  background-color: rgb(143, 203, 248);
+  box-shadow: 4px 4px whitesmoke;
+}
+
+#about img {
+  border-radius: 40px;
+  box-shadow: 4px 4px rgb(154, 232, 248);
+}
+#experience ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#experience {
+  background-color: rgb(153, 214, 252);
+  margin-bottom: 2px;
+}
+
+#connect a i {
+  margin-right: 8px; /* space between text */
+  font-size: 1.2em; /* icone size */
+  vertical-align: middle;
+}
+
+#connect a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 6px;
+
+  text-decoration: none;
+  color: rgb(82, 9, 226);
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#connect a:hover {
+  background: rgb(82, 9, 226);
+  color: white;
+}
