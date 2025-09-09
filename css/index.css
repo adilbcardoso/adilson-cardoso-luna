@@ -34,16 +34,30 @@ section {
   box-shadow: 4px 4px rgb(154, 232, 248);
 }
 #experience ul {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   list-style-type: none;
-  padding: 0;
+  padding: 15px;
 }
-
+#experience li {
+  background-color: whitesmoke;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
 #experience {
   background-color: rgb(153, 214, 252);
-  margin-bottom: 2px;
+  list-style-type: none;
 }
 
+#connect ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 #connect a i {
+  list-style-type: none;
   margin-right: 8px; /* space between text */
   font-size: 1.2em; /* icone size */
   vertical-align: middle;
