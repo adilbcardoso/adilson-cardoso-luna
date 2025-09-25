@@ -1,3 +1,4 @@
+/* CSS for the smallest screen size (mobile devices) first */
 body {
   max-width: 480px;
   margin: auto;
