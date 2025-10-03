@@ -179,6 +179,60 @@ footer {
   color: aliceblue;
   font-size: 0.8rem;
 }
+#form {
+  display: flex;
+  flex-direction: column;
+  color: beige;
+  align-items: center;
+}
+form [name=name="leave_message"] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 1rem;
+}
+form[name="leave_message"] input,
+form[name="leave_message"] textarea {
+  padding: 0.2rem;
+  font-size: 1rem;
+  border: 0.1rem solid;
+  border-radius: 0.3rem;
+}
+
+form[name=name="leave_message"] button[type="submit"] {
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3rem;
+  color: rgba(93, 94, 95, 0.688);
+  cursor: pointer;
+  font-weight: bold;
+}
+.edit-btn,
+.remove-btn {
+  padding: 0.2rem;
+  font-size: 0.6rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin: 0.2rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+#messages {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: azure;
+  gap: 0.1rem;
+}
+
+#messages li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
 /* ----------------------------- */
 /* for tablet */
 @media (min-width: 768px) {
@@ -378,6 +432,48 @@ footer {
     color: rgb(4, 7, 8);
     font-size: 0.8rem;
   }
+  #form {
+    color: rgb(62, 15, 66);
+  }
+  form [name=name="leave_message"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 1rem;
+  }
+  form[name="leave_message"] input,
+  form[name="leave_message"] textarea {
+    padding: 0.2rem;
+    font-size: 1rem;
+    border: 0.1rem solid;
+    border-radius: 0.3rem;
+    border-color: rgb(124, 53, 129);
+  }
+  form[name=name="leave_message"] button[type="submit"] {
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+  .edit-btn,
+  .remove-btn {
+    padding: 0.2rem;
+    font-size: 0.6rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin: 0.2rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  #messages {
+    display: flex;
+    flex-direction: row;
+    color: rgb(66, 19, 69);
+    gap: 0.1rem;
+  }
 }
 
 /* ----------------------------- */
@@ -514,7 +610,7 @@ footer {
     border-radius: 0.4rem;
     padding: 0.25rem;
     text-decoration: none;
-    color: rgb(67, 65, 67);
+    color: rgb(6, 5, 6);
     font-weight: bold;
     transition: background 0.3s ease, color 0.3s ease;
   }
@@ -560,5 +656,47 @@ footer {
     text-align: center;
     color: rgb(4, 7, 8);
     font-size: 0.8rem;
+  }
+  #form {
+    color: rgb(3, 0, 3);
+  }
+  form [name=name="leave_message"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 1rem;
+  }
+  form[name="leave_message"] input,
+  form[name="leave_message"] textarea {
+    padding: 0.2rem;
+    font-size: 1rem;
+    border: 0.1rem solid;
+    border-radius: 0.3rem;
+    border-color: rgb(12, 11, 12);
+  }
+  form[name=name="leave_message"] button[type="submit"] {
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+  .edit-btn,
+  .remove-btn {
+    padding: 0.2rem;
+    font-size: 0.6rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin: 0.2rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  #messages {
+    display: flex;
+    flex-direction: row;
+    color: rgb(246, 242, 247);
+    gap: 0.1rem;
   }
 }
