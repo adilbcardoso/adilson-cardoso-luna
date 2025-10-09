@@ -1,3 +1,5 @@
+//const { createElement } = require("react");
+
 const today = new Date();
 const thisYear = today.getFullYear();
 
@@ -107,3 +109,39 @@ function hideMessageSection() {
   }
 }
 hideMessageSection(); // hide function if no message
+
+// ************** Project Section ***************
+// fetch my GitHub repositories
+fetch("https://api.github.com/users/adilbcardoso/repos")
+  .then((response) => {
+    if (!response.ok) {
+      // error fetch data
+      throw new Error("Failed to fetch dta from GitHub"); // trow error
+    }
+
+    return response.json(); // return the response
+  })
+  .then((repositories) => {
+    //repositories = JSON.parse(this.repositories);
+    console.log("repositories:", repositories);
+    const projectSection = document.getElementById("projects"); //Get project section
+    const projectList = projectSection.querySelector("ul"); // select the list within the project section
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li"); // create a neu list item
+      const link = document.createElement("a"); //create a link for the list item
+      link.href = repositories[i].html_url; // set the link url
+      link.textContent = repositories[i].name; //set the text for link url
+      project.appendChild(link); // append the link to thr item
+      projectList.appendChild(project);  // appednthe list to list project
+    }
+  })
+
+  .catch((error) => {
+    console.error("Error fetching repositories:", error); // log the error
+    const projectSection = document.getElementById("projects"); //Get project section
+    const errorMessage = document.createElement("p"); // create a new paragraph with the error message on the ul
+    errorMessage.innerHTML =
+      "Unable to load the projects now, please try again later.";
+    projectSection.appendChild(errorMessage);
+  });
